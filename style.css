@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Define and load Tangled.ttf font */
+@font-face {
+  font-family: "Tangled";
+  src: url("Tangled.ttf"), 
+  url('https://www.fontsaddict.com/fontface/tangled.ttf');
+}
+
+body {
+  /* Use Tangled font for body */
+  font-family: "Tangled", Arial;
+  letter-spacing :2px; 
+}
+
+/* Style background div element */
+#background {
+  /* Set position to fixed */
+  position: fixed;
+  /* Set width and height to cover whole body */
+  width: 100%;
+  height: 100%;
+   /* Use given image as background-image */
+   background-image :url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700297647-1200x750.jpg"); 
+   /* Apply blur filter to background-image */
+   filter :blur(0.7px); 
+   /* Set z-index to lower than other elements */
+   z-index :-1; 
+   /* Set background-size to cover screen */
+   background-size :cover; 
+}
+
+h1 {
+   color:#ffeb3b; 
+   text-align :center; 
+   margin-bottom :40px;
+   font-size: 150px; 
+   letter-spacing :2px; 
+}
+
+p {
+  font-size: 90px;
+   color:#9c27b0; 
+   text-align :center; 
+}
+
+input {
+   display:block; 
+   margin :20px auto; 
+   width :300px; 
+   height :40px; 
+   border-radius :10px; 
+}
+
+button {
+ display:block; margin:auto; width :100px; height :40px; border-radius :10px;
+}
+
+#message {
+ color:#e91e63;
+}
+
+/* Use media queries for different screen sizes and orientations */
+
+@media only screen and (max-width:600px) {
+    /* For small screens, reduce input and button width */
+    input {
+        width:200px;
+    }
+
+    button {
+        width:80px;
+    }
+}
+
+@media only screen and (orientation:landscape) {
+    /* For landscape orientation, increase h1 margin-bottom */
+    h1 {
+        margin-bottom:60px;
+    }
+}
